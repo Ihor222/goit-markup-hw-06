@@ -251,7 +251,6 @@ button:focus {
 .features-subtitle {
   color: #2E2F42;
   text-align: center; /* Заголовок по центру */
-  padding: 0 16px; /* Падінги по бокам */
 
   font-size: 20px;
   font-weight: 500;
