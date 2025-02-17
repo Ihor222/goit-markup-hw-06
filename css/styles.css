@@ -991,8 +991,8 @@ color: #404BBF;
   }
   .mob-icon {
     display: flex;
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     background-color: #4D5AE5;
     border-radius: 50%;
     align-items: center;
