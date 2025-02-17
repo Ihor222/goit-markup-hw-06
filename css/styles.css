@@ -103,7 +103,7 @@ align-items: center;
 .header-menu-list{
   /* display: flex;  */
   gap: 40px;
-  /* display: none;   */
+   display: none;   
   align-items: center;
 }
 
@@ -916,6 +916,9 @@ color: #404BBF;
 
 
   .header-solid-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
     background-color: transparent;
   }
   
@@ -930,9 +933,9 @@ color: #404BBF;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   /* opacity: 0;
+   opacity: 0;
   visibility: hidden;
-  pointer-events: none;  */
+  pointer-events: none;  
   }
   .mob-close {
   background-color: transparent;
