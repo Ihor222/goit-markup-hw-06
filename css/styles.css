@@ -949,6 +949,7 @@ color: #404BBF;
   visibility: hidden;
   pointer-events: none;
   }
+
   .is-open{
     opacity: 1;
     visibility:visible;
