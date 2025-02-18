@@ -69,7 +69,7 @@ align-items: center;
 
 .hero-title{
   /* padding-bottom: 48px; */
-  padding-bottom: 72px;
+  
 }
 
 .header-logo {
@@ -81,7 +81,7 @@ align-items: center;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px
+  margin-right: 149px
 }
 
 .header-logo-black {
@@ -213,7 +213,7 @@ letter-spacing: 0.02em;
 text-align: center;
 /* max-width: 496px; */
 max-width: 216px;
-margin: 0 auto;
+margin: 0 auto 72px;
 }
 
 .hero-btn-title {
@@ -326,6 +326,7 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   max-width: 264px;
+  margin: 0 auto;
   /* gap: 24px; */
   gap: 72px;
 }
@@ -975,11 +976,14 @@ color: #404BBF;
   .mob-menu-item {
     margin-bottom: 168px;
   }
+  .mob-adres-nav{
+    margin-bottom: auto;
+  }
   .mob-menu-link {
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.1px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
   }
   .current {
@@ -989,16 +993,19 @@ color: #404BBF;
     list-style: none; /* видаляємо маркери списку */
   padding: 0; /* видаляємо внутрішні відступи списку */
   margin-bottom: 48px;
+  color: rgb(67, 68, 85);
   }
   .mob-adres-item {
     margin-bottom: 16px;
+    font-style: normal;
   }
   .mob-adres-link {
     font-family: Roboto;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
   .mob-adres{
     gap: 40px;
@@ -1027,10 +1034,19 @@ letter-spacing: 0.02em;
   .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
   }
-  .mob-menu-item:first-child .mob-menu-link {
+  .mob-adres-link:first-child .mob-menu-list{
     color: #404BBF;
   }
-
+  .mob-menu-item:not(:first-child) .mob-menu-link {
+    color: #2E2F42;
+  }
+  .mob-adres-item:first-child .mob-adres-link {
+    color: #404BBF;
+  }
+  .mob-adres-item:not(:first-child) .mob-adres-link {
+    color: #2E2F42; 
+  }
+  
   @media screen and (min-width: 768px) {
    .container{
    min-width: 768px;
@@ -1046,9 +1062,7 @@ letter-spacing: 0.02em;
     justify-content: space-between;
   }
 
-   .hero-title{
-    padding-bottom: 48px; 
-   }
+   
 
    .header-menu-list{
     display: flex; 
@@ -1061,7 +1075,7 @@ letter-spacing: 0.02em;
   }
 
   .header-logo {
-    margin-right: 76px;
+    margin-right: 72px;
   }
 
   .address {
@@ -1071,12 +1085,15 @@ letter-spacing: 0.02em;
     }
 
     .address-list {
-      gap: 20px;
+      gap: 12px;
       flex-direction: column;
       align-items: flex-end;
     }
     .address-link {
-      font-size: 14px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
       padding: 0;
     }
     .header-menu-link.current::after {
@@ -1107,6 +1124,9 @@ letter-spacing: 0.02em;
   .features-list{
     row-gap: 72px;
     column-gap: 24px;
+  }
+  .features-subtitle{
+    text-align: left;
   }
   
 
@@ -1140,7 +1160,7 @@ letter-spacing: 0.02em;
   }
 
    .hero-title{
-    padding-bottom: 36px;
+    margin-bottom: 36px;
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px; 
@@ -1156,7 +1176,7 @@ letter-spacing: 0.02em;
   }
 
   .team-item {
-    width: calc((100% - 28px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   
@@ -1164,7 +1184,8 @@ letter-spacing: 0.02em;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 24px; 
+    row-gap: 72px;
+    column-gap: 24px;
     padding-left: 108px;
     flex-wrap: wrap;
   }
@@ -1177,7 +1198,7 @@ letter-spacing: 0.02em;
 
   .footer-text {
     max-width: 264px;
-    margin-bottom: 72px; /* Відступ між текстом і Subscribe */
+     /* Відступ між текстом і Subscribe */
   }
 
   .footer-soc-container {
@@ -1255,9 +1276,7 @@ letter-spacing: 0.02em;
           align-items: center;
       }
 
-      .hero{
-        max-width: 1158px;
-      }
+    
 
       @media screen and (min-resolution: 2x){
         hero{
@@ -1269,9 +1288,7 @@ letter-spacing: 0.02em;
         }
       }
 
-      .hero-title{
-        padding-bottom: 48px; 
-      }
+      
 
       .header-menu-list{
         display: flex;
@@ -1287,6 +1304,13 @@ letter-spacing: 0.02em;
           flex-direction: row;
           gap: 40px;
           }
+
+        .address-link{
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          letter-spacing: 0.02em;
+        }
           .header-menu-link.current::after{
             content: '';
             
@@ -1312,6 +1336,7 @@ letter-spacing: 0.02em;
        .features-subtitle {
         font-size: 20px; 
         font-weight: 500; 
+        text-align: left;
        }
        .features-icon-container{
         display: flex;
@@ -1340,6 +1365,7 @@ letter-spacing: 0.02em;
      }
 
      .hero{
+      max-width: 1440px;
       padding-top: 188px;
       padding-bottom: 188px;
      }
@@ -1461,6 +1487,9 @@ letter-spacing: 0.02em;
     }
     .footer-content{
        margin-right: 120px;
+    }
+    .footer-soc-list{
+      gap: 16px;
     }
 
     .modal{
