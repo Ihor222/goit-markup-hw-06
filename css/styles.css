@@ -935,9 +935,14 @@ color: #404BBF;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none;   */
+  pointer-events: none;
+  }
+  .is-open{
+    opacity: 1;
+    visibility:visible;
+    pointer-events:painted;
   }
   .mob-close {
     border-radius: 50%;
@@ -1207,6 +1212,9 @@ letter-spacing: 0.02em;
   .modal-title{
     max-width: 360px;
   }
+  .mob-menu {
+    display: none;
+  }
 
 }
 
@@ -1439,4 +1447,8 @@ letter-spacing: 0.02em;
     .modal-title{
        max-width: 360px;
     }
+    .mob-menu {
+      display: none;
+    }
+
   }
